@@ -16,6 +16,5 @@
 
   .wrapper {
     grid-template-columns: 1fr;
-    font-size: 87.5%;
   }
 }
