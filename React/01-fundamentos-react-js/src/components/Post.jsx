@@ -21,15 +21,15 @@ export function Post({ author, publishedAt, content }) {
     addSuffix: true,
   });
 
-  function handleCreateNewComment() {
-    event.preventDefault();
+  function handleCreateNewComment(e) {
+    e.preventDefault();
 
     setComments([...comments, newCommentText]);
     setNewCommentText("");
   }
 
-  function handleNewCommentChange() {
-    setNewCommentText(event.target.value);
+  function handleNewCommentChange(e) {
+    setNewCommentText(e.target.value);
   }
 
   return (
